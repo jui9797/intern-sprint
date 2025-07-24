@@ -1,5 +1,7 @@
 import React, { useEffect, useState, Suspense } from "react";
 import { createRoot } from "react-dom/client";
+import "./index.css";
+import Navbar from "./components/Navbar";
 
 function App() {
   const [page, setPage] = useState(null);
@@ -36,6 +38,7 @@ function App() {
 
   return (
     <Suspense fallback={<div>Loading page...</div>}>
+      <Navbar></Navbar>
       <PageComponent {...page.props} />
     </Suspense>
   );
