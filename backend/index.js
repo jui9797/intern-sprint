@@ -5,7 +5,6 @@ const path = require("path");
 const app = express();
 const port = 3000;
 
-// Serve static assets from frontend build (if built)
 app.use(express.static(path.join(__dirname, "../frontend/dist")));
 
 // Inertia.js middleware (simple custom implementation for starter)
