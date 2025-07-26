@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-gray-900 text-white px-6 py-4 shadow-md">
+    <nav className="bg-[#7C5A4C] text-white px-6 py-4 border-b-2 border-gray-300">
       <div className="flex items-center justify-between w-full lg:max-w-7xl mx-auto">
         <h2 className="text-xl font-bold">Inertia App</h2>
         {/* menubar for small device */}
@@ -32,13 +32,13 @@ const Navbar = () => {
         </div>
         {/* nav menu for large device */}
         <div className="hidden md:flex space-x-8">
-          <a href="/" className="hover:text-gray-300">
+          <a href="/" className="hover:text-black">
             Home
           </a>
-          <a href="/about" className="hover:text-gray-300">
+          <a href="/about" className="hover:text-black">
             About
           </a>
-          <a href="/contact" className="hover:text-gray-300">
+          <a href="/contact" className="hover:text-black">
             Contact
           </a>
         </div>
